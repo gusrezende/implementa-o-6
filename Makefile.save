@@ -1,0 +1,3 @@
+printf 'CC = gcc\nCFLAGS = -Wall -Wextra -std=c99\n\nall: banker\n\nbanker: banker.c\n\t$(CC) $(CFLAGS) -o banker banker.c\n\nclean:\n\trm -f banker result.txt\n\n.PHONY: all clean\n' > Makefile
+
+
